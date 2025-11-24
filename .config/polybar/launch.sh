@@ -1,0 +1,1 @@
+/home/unkn0wn/.config/polybar/launch.sh

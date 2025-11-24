@@ -1,0 +1,49 @@
+From 3603c02bf54df2a5309ac74639829f2393033edc Mon Sep 17 00:00:00 2001
+From: Max Schillinger <maxschillinger@web.de>
+Date: Wed, 21 Sep 2022 20:23:16 +0200
+Subject: [PATCH] Alternate color during password input
+
+Toggle screen color between two shades of blue during password input to get
+some feedback.
+---
+ config.def.h | 1 +
+ slock.c      | 4 +++-
+ 2 files changed, 4 insertions(+), 1 deletion(-)
+
+diff --git a/config.def.h b/config.def.h
+index 9855e21..029af10 100644
+--- a/config.def.h
++++ b/config.def.h
+@@ -5,6 +5,7 @@ static const char *group = "nogroup";
+ static const char *colorname[NUMCOLS] = {
+ 	[INIT] =   "black",     /* after initialization */
+ 	[INPUT] =  "#005577",   /* during input */
++	[INPUT_ALT] = "#227799", /* during input, second color */
+ 	[FAILED] = "#CC3333",   /* wrong password */
+ };
+ 
+diff --git a/slock.c b/slock.c
+index 5ae738c..c4f28b8 100644
+--- a/slock.c
++++ b/slock.c
+@@ -27,6 +27,7 @@ char *argv0;
+ enum {
+ 	INIT,
+ 	INPUT,
++	INPUT_ALT,
+ 	FAILED,
+ 	NUMCOLS
+ };
+@@ -187,7 +188,8 @@ readpw(Display *dpy, struct xrandr *rr, struct lock **locks, int nscreens,
+ 				}
+ 				break;
+ 			}
+-			color = len ? INPUT : ((failure || failonclear) ? FAILED : INIT);
++			color = len ? (len%2 ? INPUT : INPUT_ALT)
++			            : ((failure || failonclear) ? FAILED : INIT);
+ 			if (running && oldc != color) {
+ 				for (screen = 0; screen < nscreens; screen++) {
+ 					XSetWindowBackground(dpy,
+-- 
+2.37.3
+

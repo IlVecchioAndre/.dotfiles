@@ -1,0 +1,1 @@
+/home/unkn0wn/.local/bin/internet-menu.sh

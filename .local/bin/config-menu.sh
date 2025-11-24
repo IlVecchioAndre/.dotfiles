@@ -1,0 +1,1 @@
+/home/unkn0wn/.local/bin/config-menu.sh
