@@ -1,7 +1,7 @@
 #!/bin/sh
 # config-menu.sh
 
-config=$(echo -e "bonsai\nmatrix\npipes\nacquario\nastroterm\nclock" | dmenu -i +vi -c -l 7 -p "Scegli lo screensaver:")
+config=$(echo -e "bonsai\nmatrix\npipes\nacquario\nastroterm\nclock" | dmenu -i +vi -c -l 7 -p "choose the screensaver:")
 
 case "$config" in
     "bonsai") alacritty -e bash -c "cbonsai -S; echo 'premi per chiudere'; read -n1 -r";;

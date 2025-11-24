@@ -1,7 +1,7 @@
 #!/bin/sh
 # config-menu.sh
 
-config=$(echo -e "solitario\ngittype\nbotany\ndraw" | dmenu -i -vi -c -l 7 -p "Scegli lo screensaver:")
+config=$(echo -e "solitario\ngittype\nbotany\ndraw" | dmenu -i -vi -c -l 7 -p "Choose the game:")
 
 case "$config" in
     "solitario") alacritty -e solitaire;;
