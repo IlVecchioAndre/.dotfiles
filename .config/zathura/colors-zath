@@ -1,1 +1,32 @@
-/home/unkn0wn/.config/zathura/colors-zath
+set default-bg                  "#fffff2"
+set default-fg                  "#1c0810"
+
+set statusbar-fg                "#1c0810"
+set statusbar-bg                "#a5baae"
+
+set inputbar-bg                 "#71958d"
+set inputbar-fg                 "#1c0810"
+
+set notification-bg             "#657150"
+set notification-fg             "#fffff2"
+
+set notification-error-bg       "#b61030"
+set notification-error-fg       "#fffff2"
+
+set notification-warning-bg     "#ead6aa"
+set notification-warning-fg     "#b61030"
+
+set highlight-color             "rgba(234,214,170,0.5)"
+set highlight-active-color      "rgba(28,8,16,0.5)"
+
+set completion-bg               "#a5baae"
+set completion-fg               "rgba(28,8,16,0.5)"
+
+set completion-highlight-fg     "#fffff2"
+set completion-highlight-bg     "rgba(28,8,16,0.5)"
+
+set recolor                     "true"      # Cambia da false a true
+set recolor-lightcolor          "#fffff2"   # Colore di sfondo
+set recolor-darkcolor           "#1c0810"   # Colore del testo
+set render-loading-bg           "#1c0810" # colore dello stacco tra pagine
+set recolor-keephue             "false"

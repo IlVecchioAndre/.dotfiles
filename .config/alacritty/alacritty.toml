@@ -1,1 +1,101 @@
-/home/unkn0wn/.config/alacritty/alacritty.toml
+[font]
+normal = {family = "JetBrainsMono NFM", style="Regular"}
+bold  = {family = "JetBrainsMono NFM", style="Bold"}
+italic = {family = "JetBrainsMono NFM", style="Italic"}
+size =10
+offset = {x=1, y=0}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[colors.primary]
+background = "#fffff2"
+foreground = "#1c0810"
+
+[colors.cursor]
+cursor = "#a5baae"
+text = "#fffff2"
+
+[colors.selection]
+foreground = "#551008"
+background = "#ead6aa"
+
+[colors.normal]
+black = "#1c0810"
+red = "#b61030"
+green = "#657150"
+yellow = "#ead6aa"
+blue = "#71958d"
+magenta = "#ee7175"
+cyan = "#71958d"
+white = "#fffff2"
+
+[colors.bright]
+black = "#1c0810"
+red = "#e24050"
+green = "#657150"
+yellow = "#ead6aa"
+blue = "#a5baae"
+magenta = "#f69d9d"
+cyan = "#71958d"
+white = "#fffff2"

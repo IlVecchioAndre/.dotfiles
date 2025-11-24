@@ -1,1 +1,3 @@
-/home/unkn0wn/.config/zathura/zathurarc
+set synctex true
+set synctex-editor-command "vim --remote-silent +%{line} %{input}"
+include ./colors-zath
