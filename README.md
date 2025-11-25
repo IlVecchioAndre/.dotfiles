@@ -5,7 +5,6 @@
 ![Screenshot2](screenshot2.png)
 ![Screenshot3](screenshot3.png)
 ![Screenshot4](screenshot4.png)
-![Screenshot5](screenshot5.png)
 ![dmenuphoto1](dmenuphoto1.png)
 ![dmenuphoto2](dmenuphoto2.png)
 
@@ -65,3 +64,5 @@ White:
 
 ### installing
 You can install my dotfiles using [Stow](https://www.gnu.org/software/stow/)
+
+### work in progress...
