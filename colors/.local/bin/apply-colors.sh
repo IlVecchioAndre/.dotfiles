@@ -66,12 +66,6 @@ if [ -f "$POLYBAR_MAIN" ]; then
         echo "include-file = ~/.config/polybar/colors.ini"
     fi
 fi
-# ========== MPV ==========
-generate_config \
-    "$TEMPLATE_DIR/mpv.template" \
-    "$HOME/.config/mpv/scripts/osc.lua"
-
-
 
 # ========== I3 ==========
 echo "Creating i3 config..."

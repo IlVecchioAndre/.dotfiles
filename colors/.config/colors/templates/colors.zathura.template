@@ -1,0 +1,32 @@
+set default-bg                  "${BG}"
+set default-fg                  "${FG}"
+
+set statusbar-fg                "${FG}"
+set statusbar-bg                "${CURSOR}"
+
+set inputbar-bg                 "${DESKTOPBG}"
+set inputbar-fg                 "${FG}"
+
+set notification-bg             "${greenl}"
+set notification-fg             "${whitel}"
+
+set notification-error-bg       "${red}"
+set notification-error-fg       "${whitel}"
+
+set notification-warning-bg     "${yellowl}"
+set notification-warning-fg     "${red}"
+
+set highlight-color             "rgba(234,214,170,0.5)"
+set highlight-active-color      "rgba(28,8,16,0.5)"
+
+set completion-bg               "${bluel}"
+set completion-fg               "rgba(28,8,16,0.5)"
+
+set completion-highlight-fg     "${white}"
+set completion-highlight-bg     "rgba(28,8,16,0.5)"
+
+set recolor                     "true"      # Cambia da false a true
+set recolor-lightcolor          "${BG}" # Colore di sfondo
+set recolor-darkcolor           "${FG}"   # Colore del testo
+set render-loading-bg           "${FG}" # colore dello stacco tra pagine
+set recolor-keephue             "false"

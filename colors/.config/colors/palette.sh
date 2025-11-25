@@ -10,36 +10,36 @@ export DESKTOPBG="#71958d"
 export TEXTINCURSOR="#fffff2"
 
 # Colori base (neri)
-export COLOR0="#1c0810"
-export COLOR8="#1c0810"
+export black="#1c0810"
+export blackl="#1c0810"
 
 # Rossi
-export COLOR1="#b61030"
-export COLOR9="#e24050"
+export red="#b61030"
+export redl="#e24050"
 
 # Verdi
-export COLOR2="#657150"
-export COLOR10="#657150"
+export green="#657150"
+export greenl="#657150"
 
 # Gialli
-export COLOR3="#ead6aa"
-export COLOR11="#ead6aa"
+export yellow="#ead6aa"
+export yellowl="#ead6aa"
 
 # Blu
-export COLOR4="#71958d"
-export COLOR12="#a5baae"
+export blue="#71958d"
+export bluel="#a5baae"
 
 # Magenta
-export COLOR5="#ee7175"
-export COLOR13="#f69d9d"
+export magenta="#ee7175"
+export magentl="#f69d9d"
 
 # Cyan
-export COLOR6="#71958d"
-export COLOR14="#71958d"
+export cyan="#71958d"
+export cyanl="#71958d"
 
 # Bianchi
-export COLOR7="#fffff2"
-export COLOR15="#fffff2"
+export white="#fffff2"
+export whitel="#fffff2"
 
 # Colori semantici (per facilitare l'uso)
 export ACCENT="#71958d"

@@ -1,0 +1,13 @@
+[colors]
+background = ${BG}
+backfround-alt = ${FG}
+foreground = ${FG}
+
+primary = ${DESKTOPBG}
+secondary = ${DESKTOPBG}
+disabled = ${blackl}
+accent = ${ACCENT}
+urgent = ${URGENT}
+success = ${SUCCES}
+warning = ${WARNING}
+

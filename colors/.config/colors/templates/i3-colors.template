@@ -1,0 +1,29 @@
+# Colori finestre
+# class                 border   backgr.  text    indicator child_border
+client.focused          #71958d  #71958d  #fffff2 #71958d   #fffff2
+client.focused_inactive #fffff2  #fffff2  #1c0810 #1c0810   #1c0810
+client.unfocused        #fffff2  #fffff2  #1c0810 #fffff2   #1c0810
+client.urgent           #b61030  #b61030  #fffff2 #b61030   #b61030
+client.placeholder      #fffff2  #fffff2  #1c0810 #fffff2   #fffff2
+client.background       #fffff2
+
+#background
+exec_always --no-startup-id xsetroot -solid "#71958d"
+
+
+# Colori bar
+#bar {
+#    colors {
+#        background #fffff2
+#        statusline #1c0810
+#        separator  #1c0810
+#
+#        # workspace         border  backgr  text
+#        focused_workspace   #71958d #71958d #fffff2
+#        active_workspace    #fffff2     #fffff2     #1c0810
+#        inactive_workspace  #fffff2     #fffff2     #1c0810
+#        urgent_workspace    #b61030 #b61030 #fffff2
+#        binding_mode        #ead6aa #ead6aa #fffff2
+#    }
+#}
+

@@ -1,0 +1,33 @@
+[colors.primary]
+background = "${BG}"
+foreground = "${fg}"
+
+[colors.cursor]
+cursor = "${CURSOR}"
+text = "${TEXTINCURSOR}"
+
+[colors.selection]
+foreground = "${TEXTSELECT}"
+background = "${BGSELECT}"
+
+[colors.normal]
+black = "${black}"
+red = "${red}"
+green = "${green}"
+yellow = "${yellow}"
+blue = "${blue}"
+magenta = "${magenta}"
+cyan = "${cyan}"
+white = "${white}"
+
+[colors.bright]
+black = "${blackl}"
+red = "${redl}"
+green = "${greenl}"
+yellow = "${yellowl}"
+blue = "${bluel}"
+magenta = "${magental}"
+cyan = "${cyanl}"
+white = "${whitel}"
+
+
