@@ -26,7 +26,7 @@ set completion-highlight-fg     "#fffff2"
 set completion-highlight-bg     "rgba(28,8,16,0.5)"
 
 set recolor                     "true"      # Cambia da false a true
-set recolor-lightcolor          "#fffff2"   # Colore di sfondo
+set recolor-lightcolor          "#fffff2" # Colore di sfondo
 set recolor-darkcolor           "#1c0810"   # Colore del testo
 set render-loading-bg           "#1c0810" # colore dello stacco tra pagine
 set recolor-keephue             "false"

@@ -140,9 +140,9 @@ syntax enable                 " Abilita sintassi colorata
 filetype plugin indent on     " Abilita riconoscimento tipo file
 
 "" Carica i colori generati automaticamente
-"if filereadable(expand('~/.config/vim/colors-generated.vim'))
-  "  source ~/.config/vim/colors-generated.vim
-"endif
+if filereadable(expand('~/.config/vim/colors-generated.vim'))
+    source ~/.config/vim/colors-generated.vim
+endif
 
 "" Imposta background in base alla palette
 "set background=dark           " Cambia in 'light' se usi palette chiare

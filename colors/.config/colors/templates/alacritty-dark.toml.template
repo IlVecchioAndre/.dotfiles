@@ -1,14 +1,14 @@
 [colors.primary]
-background = "${BG}"
-foreground = "${FG}"
+background = "${FG}"
+foreground = "${BG}"
 
 [colors.cursor]
-cursor = "${CURSOR}"
-text = "${TEXTINCURSOR}"
+cursor = "${TEXTINCURSOR}"
+text = "${CURSOR}"
 
 [colors.selection]
-foreground = "${TEXTSELECT}"
-background = "${BGSELECT}"
+foreground = "${BGSELECT}"
+background = "${TEXTSELECT}"
 
 [colors.normal]
 black = "${black}"

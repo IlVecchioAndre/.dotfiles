@@ -68,6 +68,9 @@ offset = {x=1, y=0}
 
 
 
+
+
+
 [colors.primary]
 background = "#fffff2"
 foreground = "#1c0810"

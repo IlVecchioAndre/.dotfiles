@@ -52,6 +52,17 @@ sed -i '/^\[colors\./,/^$/d' "$ALACRITTY_MAIN" 2>/dev/null
 echo "" >> "$ALACRITTY_MAIN"
 echo "$ALACRITTY_COLORS" >> "$ALACRITTY_MAIN"
 echo "✓ Alacritty done"
+#Alacritty dark profile
+echo "Making Alacritty dark colors config..."
+ALACRITTY_MAIN="$HOME/.config/alacritty/alacritty-dark.toml"
+ALACRITTY_COLORS=$(envsubst < "$TEMPLATE_DIR/alacritty-dark.toml.template")
+
+sed -i '/^\[colors\./,/^$/d' "$ALACRITTY_MAIN" 2>/dev/null
+
+echo "" >> "$ALACRITTY_MAIN"
+echo "$ALACRITTY_COLORS" >> "$ALACRITTY_MAIN"
+echo "✓ Alacritty dark done"
+
 
 # ========== POLYBAR ==========
 generate_config \

@@ -92,12 +92,12 @@ gaps inner 15px
 gaps outer 0px
 # === COLORS START ===
 # Colori finestre
-# class                 border   backgr.  text  indicator child_border
-client.focused          #71958d  #71958d  #fffff2   #71958d   #fffff2
-client.focused_inactive #fffff2      #fffff2      #1c0810   #1c0810       #1c0810
-client.unfocused        #fffff2      #fffff2      #1c0810   #fffff2       #1c0810
-client.urgent           #b61030  #b61030  #fffff2   #b61030   #b61030
-client.placeholder      #fffff2      #fffff2      #1c0810   #fffff2       #fffff2
+# class                 border   backgr.  text    indicator child_border
+client.focused          #71958d  #71958d  #fffff2 #71958d   #fffff2
+client.focused_inactive #fffff2  #fffff2  #1c0810 #1c0810   #1c0810
+client.unfocused        #fffff2  #fffff2  #1c0810 #fffff2   #1c0810
+client.urgent           #b61030  #b61030  #fffff2 #b61030   #b61030
+client.placeholder      #fffff2  #fffff2  #1c0810 #fffff2   #fffff2
 client.background       #fffff2
 
 #background
