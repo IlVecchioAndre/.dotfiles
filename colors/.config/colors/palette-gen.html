@@ -59,29 +59,29 @@
             const [showSuccess, setShowSuccess] = useState(false);
 
             const variables = [
-                { key: 'DESKTOPBG', label: 'Background desktop', category: 'Principale' },
-                { key: 'BG', label: 'Background principale', category: 'Principale' },
-                { key: 'FG', label: 'Foreground principale', category: 'Principale' },
-                { key: 'BGSELECT', label: 'Background selezione', category: 'Principale' },
-                { key: 'TEXTSELECT', label: 'Testo selezionato', category: 'Principale' },
-                { key: 'CURSOR', label: 'Cursore', category: 'Principale' },
-                { key: 'TEXTINCURSOR', label: 'Testo nel cursore', category: 'Principale' },
-                { key: 'COLOR0', label: 'Nero (normale)', category: 'Base' },
-                { key: 'COLOR8', label: 'Nero (chiaro)', category: 'Base' },
-                { key: 'COLOR1', label: 'Rosso (normale)', category: 'Rossi' },
-                { key: 'COLOR9', label: 'Rosso (chiaro)', category: 'Rossi' },
-                { key: 'COLOR2', label: 'Verde (normale)', category: 'Verdi' },
-                { key: 'COLOR10', label: 'Verde (chiaro)', category: 'Verdi' },
-                { key: 'COLOR3', label: 'Giallo (normale)', category: 'Gialli' },
-                { key: 'COLOR11', label: 'Giallo (chiaro)', category: 'Gialli' },
-                { key: 'COLOR4', label: 'Blu (normale)', category: 'Blu' },
-                { key: 'COLOR12', label: 'Blu (chiaro)', category: 'Blu' },
-                { key: 'COLOR5', label: 'Magenta (normale)', category: 'Magenta' },
-                { key: 'COLOR13', label: 'Magenta (chiaro)', category: 'Magenta' },
-                { key: 'COLOR6', label: 'Cyan (normale)', category: 'Cyan' },
-                { key: 'COLOR14', label: 'Cyan (chiaro)', category: 'Cyan' },
-                { key: 'COLOR7', label: 'Bianco (normale)', category: 'Bianchi' },
-                { key: 'COLOR15', label: 'Bianco (chiaro)', category: 'Bianchi' },
+                { key: 'DESKTOPBG', label: 'Background desktop', category: 'Primary' },
+                { key: 'BG', label: 'Primary Background', category: 'Primary' },
+                { key: 'FG', label: 'Primary Foreground' , category: 'Primary' },
+                { key: 'BGSELECT', label: 'Background selection', category: 'Primary'' },
+                { key: 'TEXTSELECT', label: 'selected Text', category: 'Primary' },
+                { key: 'CURSOR', label: 'Cursor', category: 'Primary' }
+                { key: 'TEXTINCURSOR', label: 'Text inside cursore', category: 'Primary' },
+                { key: 'black', label: 'black (normal)', category: 'Base' },
+                { key: 'blackl', label: 'black (light)', category: 'Base' },
+                { key: 'red', label: 'Rosso (normal)', category: 'Red' },
+                { key: 'redl', label: 'Rosso (light)', category: 'Red' },
+                { key: 'green', label: 'green (normal)', category: 'Green' },
+                { key: 'greenl', label: 'green (light)', category: 'Green' },
+                { key: 'yellow', label: 'yellow (normal)', category: 'yellow' },
+                { key: 'yellowl', label: 'yellow (light)', category: 'yellow' },
+                { key: 'blue', label: 'Blue (normal)', category: 'Blue' },
+                { key: 'bluel', label: 'Blue (light)', category: 'Blue' },
+                { key: 'magenta', label: 'Magenta (normal)', category: 'Magenta' },
+                { key: 'magental', label: 'Magenta (light)', category: 'Magenta' },
+                { key: 'cyan', label: 'Cyan (normal)', category: 'Cyan' },
+                { key: 'cyanl', label: 'Cyan (light)', category: 'Cyan' },
+                { key: 'white', label: 'white (normal)', category: 'white' },
+                { key: 'whitel', label: 'white (light)', category: 'white' },
             ];
 
             const extractColors = (text) => {
@@ -101,7 +101,7 @@
             };
 
             const generateScript = () => {
-                let script = '#!/bin/bash\n\n# PALETTE PRINCIPALE\n';
+                let script = '#!/bin/bash\n\n# PRIMARY PALETTE \n';
 
                 const mainVars = ['BG', 'FG', 'CURSOR', 'TEXTSELECT', 'BGSELECT', 'DESKTOPBG', 'TEXTINCURSOR'];
                 mainVars.forEach(key => {
@@ -109,31 +109,31 @@
                     script += `export ${key}="${color}"\n`;
                 });
 
-                script += '\n# Colori base (neri)\n';
+                script += '\n# Colori base (black)\n';
                 ['COLOR0', 'COLOR8'].forEach(key => {
                     const color = assignments[key] || '#4a5353';
                     script += `export ${key}="${color}"\n`;
                 });
 
-                script += '\n# Rossi\n';
+                script += '\n# Red\n';
                 ['COLOR1', 'COLOR9'].forEach(key => {
                     const color = assignments[key] || '#b65f5c';
                     script += `export ${key}="${color}"\n`;
                 });
 
-                script += '\n# Verdi\n';
+                script += '\n# Grenn\n';
                 ['COLOR2', 'COLOR10'].forEach(key => {
                     const color = assignments[key] || '#6d896d';
                     script += `export ${key}="${color}"\n`;
                 });
 
-                script += '\n# Gialli\n';
+                script += '\n# Yellow\n';
                 ['COLOR3', 'COLOR11'].forEach(key => {
                     const color = assignments[key] || '#d79921';
                     script += `export ${key}="${color}"\n`;
                 });
 
-                script += '\n# Blu\n';
+                script += '\n# Blue\n';
                 ['COLOR4', 'COLOR12'].forEach(key => {
                     const color = assignments[key] || '#458588';
                     script += `export ${key}="${color}"\n`;
@@ -151,13 +151,13 @@
                     script += `export ${key}="${color}"\n`;
                 });
 
-                script += '\n# Bianchi\n';
+                script += '\n# white\n';
                 ['COLOR7', 'COLOR15'].forEach(key => {
                     const color = assignments[key] || '#ebdbb2';
                     script += `export ${key}="${color}"\n`;
                 });
 
-                script += '\n# Colori semantici (per facilitare l\'uso)\n';
+                script += '\n# Semantic colors\n';
                 script += `export ACCENT="${assignments['COLOR4'] || '$COLOR4'}"\n`;
                 script += `export URGENT="${assignments['COLOR1'] || '$COLOR1'}"\n`;
                 script += `export SUCCESS="${assignments['COLOR2'] || '$COLOR2'}"\n`;

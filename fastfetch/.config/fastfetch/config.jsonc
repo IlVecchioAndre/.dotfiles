@@ -13,32 +13,11 @@
         "break",
         "break",
         "break",
+        "break",
         "title",
-        "break",
         {
-            "type": "os",
-            "key": "os",
-            "keyColor": "red"
-        },
-        {
-            "type": "kernel",
-            "key": "kernel",
-            "keyColor": "green"
-        },
-        {
-            "type": "terminal",
-            "key": "Terminal",
-            "keyColor": "yellow"
-        },
-        {
-            "type": "wm",
-            "key": "Wm  ",
-            "keyColor": "blue"
-        },
-        "break",
-        {
-            "type": "colors",
-            "paddingleft": "4"},
-        "break"
+            "type": "custom",
+            "format": "    ~ Signor Jack was here"
+        }
     ]
 }

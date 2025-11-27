@@ -19,11 +19,11 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 # is used in the bar {} block below.
 font pango: Cousine Monospace 10
 #sostituisci il capslock con esc
-exec --no-startup-id setxkbmap -option caps:escape
+exec_always --no-startup-id setxkbmap -option caps:escape
 
 
 #setto il delay della tastiera:
-exec xset r rate 220 40
+exec_always xset r rate 220 40
 #per controllare stato batteria:
 exec --no-startup-id dunst
 exec --no-startup-id while true; do ~/.local/bin/battery-check.sh; sleep 120; done
@@ -85,7 +85,7 @@ for_window [class="Zathura"] focus
 #apri modulo wifi
 bindsym $mod+Shift+i exec --no-startup-id internet-menu.sh
 bindsym $mod+i exec --no-startup-id dmenu_websearch
-
+exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
 # Bordi alle finestre:
 default_border pixel 2
 gaps inner 15px
@@ -101,7 +101,7 @@ client.placeholder      #fffff2  #fffff2  #1c0810 #fffff2   #fffff2
 client.background       #fffff2
 
 #background
-exec_always --no-startup-id xsetroot -solid "#71958d"
+exec_always --no-startup-id hsetroot -solid "#71958d"
 
 
 # Colori bar

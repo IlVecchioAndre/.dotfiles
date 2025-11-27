@@ -229,24 +229,22 @@ nnoremap - $
 "nnoremap k gk
 
 " configurazioni personali layout italiano
-inoremap 4 $
-inoremap $ 4
-inoremap 8 (
-inoremap ( 8
-inoremap 9 )
-inoremap ) 9
-inoremap 2 "
-inoremap " 2
+inoremap æ à
+inoremap € è
+inoremap → ì
+inoremap ø ò
+inoremap ↓ ù
+inoremap ò "
+inoremap à $
+inoremap ù /
+
 inoremap + }
-inoremap * +
 inoremap è {
-inoremap é è
 inoremap ç <del>
-inoremap ° *
+inoremap ° +
 
 nnoremap è {
 nnoremap + }
-nnoremap ù :
 vnoremap ù :
 vnoremap - $
 

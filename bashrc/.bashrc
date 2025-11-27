@@ -43,7 +43,7 @@ colorhex(){
 alias ..='cd ..'
 alias install='sudo dnf install'
 #--logo-padding 7
-fastfetch --logo-color-1 "#900000" --color-title reset_blue --logo-padding-right 8 --logo-padding-left 6
+fastfetch --logo-color-1 "#b61030" --color-title reset_blue --logo-padding-right 6 --logo-padding-left 6
 
 alias bau='cat ~/.config/sigjackcolori.txt'
 alias rm='rm -i'
